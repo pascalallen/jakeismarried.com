@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Tom and Apphia are best friends
+                    Y u so long, son?<br>Walgreens earbuds
                 </div>
 
                 <div class="links">
