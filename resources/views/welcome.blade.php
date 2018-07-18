@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Tom and Apphia are best friends
                 </div>
 
                 <div class="links">
