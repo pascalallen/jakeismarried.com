@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Controller@home');
+Route::post('/', 'RsvpController@new');
+Route::get('rsvp/{uniqid}', 'RsvpController@find'); // show
+Route::post('rsvp/{uniqid}', 'RsvpController@update'); // update
+Route::get('rsvps', 'RsvpController@all'); // all

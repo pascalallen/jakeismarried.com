@@ -1,0 +1,14 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: #E9806E;
+    height: 100%;
+    /*background-image: url("/img/memphis-colorful.png");*/
+    background-color: #131200;
+    /*font-family: 'Sacramento', cursive;*/
+    /*font-family: 'Cabin Sketch', cursive;*/
+    font-size: 3vmin;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
