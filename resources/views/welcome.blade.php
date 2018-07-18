@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Y u so long, son?<br>Walgreens earbuds
+                    Coming soon!
                 </div>
 
                 <div class="links">
