@@ -51,7 +51,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				{!! Form::submit('Update', array('class' => 'btn')) !!}
+				{!! Form::submit('Update', array('class' => 'btn-light')) !!}
 			</div>
 		{!! Form::close() !!}
 	</div>
