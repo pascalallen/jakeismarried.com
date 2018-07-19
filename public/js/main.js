@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	$(window).scroll(function() {
-		$("#my_audio").get(0).play();
-	});
+	// $(window).scroll(function() {
+	// 	$("#my_audio").get(0).play();
+	// });
 	$('#card').click(function(e) {
 		e.stopPropagation();
 		$(this).closest('.card').hide();
