@@ -12,7 +12,7 @@
         <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <audio id="my_audio" src="{{ asset('sounds/mario.mp3') }}" loop="loop"></audio>
+        <audio id="my_audio" src="{{ asset('sounds/mario.mp3') }}" loop="loop" autoplay=""></audio>
         <div class="container">
             @yield('content')
         </div>
