@@ -8,7 +8,7 @@
 			<h1>
 				Jacob's Bachelor Party
 			</h1>
-			When: <span class="cursor-pointer" style="color:#78BC61" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="11/16 @ 11p - 11/19">Nov. 16-19</span><br>
+			When: <span class="cursor-pointer" style="color:#78BC61" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="11/16 @ 11a - 11/19">Nov. 16-19</span><br>
 			Where: <span class="cursor-pointer" style="color:#78BC61" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="2805 Pace Bend Rd. North Spicewood, TX 78669">Pace Bend</span><br>
 			Who: <a href="rsvps" style="color:#78BC61">Find out</a>
 		</div>
