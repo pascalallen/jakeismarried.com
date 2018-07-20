@@ -52,7 +52,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				{!! Form::submit('RSVP!', array('class' => 'btn-light')) !!}
+				{!! Form::submit('RSVP!', array('class' => 'btn btn-sm btn-light')) !!}
 			</div>
 		{!! Form::close() !!}
 	</div>
