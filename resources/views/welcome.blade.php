@@ -8,8 +8,8 @@
 		<div id="home-carousel" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				@foreach($images as $image)
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="https://imgur.com/{{ $image->imgur_id }}.jpg">
+					<div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+						<img class="d-block w-100 jake-images" src="https://imgur.com/{{ $image->imgur_id }}.jpg">
 					</div>
 				@endforeach
 			</div>
