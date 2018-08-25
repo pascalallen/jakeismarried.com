@@ -12,3 +12,8 @@ body {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.jake-images{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
