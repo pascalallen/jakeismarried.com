@@ -15,6 +15,8 @@
 				</div>
 			</div>
 		</a>
+	</div>
+	<div class="row h-100 justify-content-center align-items-center">
 		<div class="text-center">
 			<h1>
 				Jacob's Bachelor Party
