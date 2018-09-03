@@ -13,7 +13,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function home(){
-        $images = Image::all();
+        $images = Image::inRandomOrder()->get();
         return view('welcome', ['images' => $images]);
     }
 }

@@ -12,3 +12,12 @@ body {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.carousel-inner {
+    z-index: -99;
+    position: absolute;
+}
+
+img {
+    max-height: 100%;
+}
