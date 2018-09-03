@@ -13,6 +13,7 @@ body {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .carousel-inner {
     z-index: -99;
     position: absolute;
@@ -20,4 +21,9 @@ body {
 
 img {
     max-height: 100%;
+=======
+.jake-images{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+>>>>>>> master
 }
