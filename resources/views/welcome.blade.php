@@ -3,17 +3,6 @@
 @section('title')Marriage!@endsection
 
 @section('content')
-<<<<<<< HEAD
-	<!-- TODO: set random image carousel as background. will pull image slug from db. host images on imgur. -->
-	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			@foreach($images as $image)
-				<div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-					<img class="d-block w-100 image img-fluid" src="https://imgur.com/{{ $image->imgur_id }}.jpg">
-				</div>
-			@endforeach
-		</div>
-=======
 	<div class="row h-100 justify-content-center align-items-center">
 		<a href="/images">
 			<div id="home-carousel" class="carousel slide" data-ride="carousel">
@@ -26,7 +15,6 @@
 				</div>
 			</div>
 		</a>
->>>>>>> master
 	</div>
 	<div class="row h-100 justify-content-center align-items-center">
 		<div class="text-center">

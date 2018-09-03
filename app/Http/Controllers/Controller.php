@@ -12,12 +12,8 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-<<<<<<< HEAD
-    public function home(){
-=======
     public function home()
     {
->>>>>>> master
         $images = Image::inRandomOrder()->get();
         return view('welcome', ['images' => $images]);
     }
