@@ -90,32 +90,28 @@ class ImageController extends Controller
     public function upload(Request $request)
     {
         foreach($request->files as $upload){
-            dd($upload);
-            $file = new UploadedFile($upload->path, $upload->originalName, $upload->mimeType, $upload->size, $upload->error, $upload->test);
-            dd($file);
+            $file = new UploadedFile($upload->getPathName(), $upload->getClientOriginalName(), $upload->getMimeType(), $upload->getClientSize(), $upload->getError());
 
-            $result = Imgur::setHeaders([
-                'headers' => [
-                    'authorization' => 'Client-ID ' . env('IMGUR_CLIENT_ID'),
-                    'content-type' => 'application/x-www-form-urlencoded',
-                ]
-            ])->setFormParams([
-                'form_params' => [
-                    'image' => $file,
-                ]
-            ])->upload($file);
+            if($file->isValid()){
+                $result = Imgur::setHeaders([
+                    'headers' => [
+                        'authorization' => 'Client-ID ' . env('IMGUR_CLIENT_ID'),
+                        'content-type' => 'application/x-www-form-urlencoded',
+                    ]
+                ])->upload($file);
+                
+                $image = new Image();
+                $image->name = '';
+                $image->description = '';
+                $image->imgur_id = '';
+                $image->category_id = 1;
+                $image->slug = '';
+                $image->main = 0;
+                $image->imgur_link = $result->link();
+                $image->save();
 
-            $image = new Image();
-            $image->name = '';
-            $image->description = '';
-            $image->imgur_id = '';
-            $image->category_id = 1;
-            $image->slug = '';
-            $image->main = 0;
-            $image->imgur_link = $result->link();
-            $image->save();
-
-            return redirect()->back();
+                return redirect()->back();
+            }
         }
     }
 }
