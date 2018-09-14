@@ -10,6 +10,11 @@ use App\Image;
 
 class ImageController extends Controller
 {
+    public function __construct()
+    {
+        ini_set('post_max_size', '15M');
+        ini_set('upload_max_filesize', '15M');
+    }
     /**
      * Display a listing of the resource.
      *
