@@ -8,6 +8,14 @@
             <h1>Photos!</h1>
         </div>
     </div>
+    <div class="row text-center">
+        <div class="col">
+            {!! Form::open(['url' => 'images/upload', 'method' => 'post', 'files' => true]) !!}
+                {!! Form::file('image', $attributes = []) !!}
+                {!! Form::submit('Upload') !!}
+            {!! Form::close() !!}
+        </div>
+    </div>
 	<div class="row justify-content-center align-items-center">
         @foreach($images as $image)
             <div class="col-md-4 mb-3">
