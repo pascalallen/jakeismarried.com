@@ -17,3 +17,7 @@ Route::post('/', 'RsvpController@new');
 Route::get('rsvp/{uniqid}', 'RsvpController@find'); // show
 Route::post('rsvp/{uniqid}', 'RsvpController@update'); // update
 Route::get('rsvps', 'RsvpController@all'); // all
+
+Route::group(['prefix' => 'api'], function(){
+  Route::resource('images', 'ImageController');
+});

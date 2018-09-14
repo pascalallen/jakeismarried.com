@@ -8,6 +8,11 @@
             <h1>Photos!</h1>
         </div>
     </div>
+    <div class="row text-center">
+        <div class="col">
+            
+        </div>
+    </div>
 	<div class="row justify-content-center align-items-center">
         @foreach($images as $image)
             <div class="col-md-4 mb-3">
