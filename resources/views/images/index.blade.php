@@ -19,7 +19,12 @@
 	<div class="row justify-content-center align-items-center">
         @foreach($images as $image)
             <div class="col-md-4 mb-3">
-                <img src="https://imgur.com/{{ $image->imgur_id }}.jpg" class="img-fluid">
+                @if($image->imgur_id)
+                    <img src="https://imgur.com/{{ $image->imgur_id }}.jpg" class="img-fluid">
+                @endif
+                @if($image->imgur_link)
+                    <img src="{{ $image->imgur_link }}" class="img-fluid">
+                @endif
             </div>
         @endforeach
 	</div>
