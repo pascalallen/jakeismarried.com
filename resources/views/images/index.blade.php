@@ -10,7 +10,10 @@
     </div>
     <div class="row text-center">
         <div class="col">
-            
+            {!! Form::open(['url' => 'images/upload', 'method' => 'post', 'files' => true]) !!}
+                {!! Form::file('image', $attributes = []) !!}
+                {!! Form::submit('Upload') !!}
+            {!! Form::close() !!}
         </div>
     </div>
 	<div class="row justify-content-center align-items-center">
