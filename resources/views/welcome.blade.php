@@ -9,7 +9,7 @@
 				<div class="carousel-inner">
 					@foreach($images as $image)
 						<div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-							<img class="d-block w-100 jake-images" src="https://imgur.com/{{ $image->imgur_id }}.jpg">
+							<img class="d-block w-100 jake-images" src="{{ $image->imgur_id ? "https://imgur.com/$image->imgur_id.jpg" : $image->imgur_link }}">
 						</div>
 					@endforeach
 				</div>
