@@ -23,4 +23,10 @@ class Controller extends BaseController
         $images = Image::all();
         return view('images.index', ['images' => $images]);
     }
+
+    public function details()
+    {
+        $image = Image::where('slug', 'unflaterring-trump')->first();
+        return view('details', ['image' => $image]);
+    }
 }

@@ -9,7 +9,7 @@
 				<div class="carousel-inner">
 					@foreach($images as $image)
 						<div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-							<img class="d-block w-100 jake-images" src="https://imgur.com/{{ $image->imgur_id }}.jpg">
+							<img class="d-block w-100 jake-images" src="{{ $image->imgur_id ? "https://imgur.com/$image->imgur_id.jpg" : $image->imgur_link }}">
 						</div>
 					@endforeach
 				</div>
@@ -23,7 +23,8 @@
 			</h1>
 			When: <span class="cursor-pointer" style="color:#78BC61" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="11/16 @ 11a - 11/19">Nov. 16-19</span><br>
 			Where: <span class="cursor-pointer" style="color:#78BC61" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="2805 Pace Bend Rd. North Spicewood, TX 78669">Pace Bend</span><br>
-			Who: <a href="rsvps" style="color:#78BC61">Find out</a>
+			Who: <a href="rsvps" style="color:#78BC61">Find out</a><br>
+			Details: <a href="details" style="color:#78BC61">Here</a>
 		</div>
 	</div>
 	<div class="row h-100 justify-content-center align-items-center">
