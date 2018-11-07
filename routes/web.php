@@ -18,3 +18,4 @@ Route::post('/', 'RsvpController@new');
 Route::get('rsvp/{uniqid}', 'RsvpController@find'); // show
 Route::post('rsvp/{uniqid}', 'RsvpController@update'); // update
 Route::get('rsvps', 'RsvpController@all'); // all
+Route::get('details', 'Controller@details');
